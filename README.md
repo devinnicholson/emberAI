@@ -23,7 +23,7 @@ act quickly during fire emergencies.
     data into a 1–5 urgency score and one‑sentence summary.
   - **Shelter Capacity Forecasting**: Time‑series API + LLM or ARIMA predicts
     near‑future capacity risks (boolean flag).
-  - Modular workflows in n8n—no additional server code required.
+  - Modular workflows in n8n, no additional server code required.
 
 - **Real‑Time Data Ingestion**
 
@@ -50,8 +50,8 @@ Follow these steps to run EmberAI locally. No paid hosting or accounts required.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your‑org/emberai‑dashboard.git
-cd emberai‑dashboard
+git clone https://github.com/devinnicholson/emberAI.git
+cd emberAI
 ```
 
 ### 2. Configure environment
@@ -133,4 +133,4 @@ I welcome contributions to:
 - Integrate reverse‑geocoding for human‑readable locations.
 - Enhance UI/UX with chart overlays and data exports.
 
-Let's build stronger wildfire response tools together! 🌍🔥
+Let's build stronger wildfire response tools together 🌍🔥
