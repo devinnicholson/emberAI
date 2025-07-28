@@ -4,7 +4,7 @@ services:
     build:
       context: ./mcp
       dockerfile: Dockerfile
-    image: fire-relief-search-proxy
+    image: emberai-search-proxy
     restart: unless-stopped
     ports:
       - "4000:4000"
