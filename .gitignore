@@ -1,0 +1,29 @@
+# Environment
+.env
+
+# Node.js
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+/frontend/dist/
+/mcp/dist/
+/backend/build/  # if you ever compile Go or other builds here
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+*.sqlite3
+*.egg-info/
+
+# n8n workflow state
+/n8n/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

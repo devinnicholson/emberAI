@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  mcp:
+    build:
+      context: ./mcp
+      dockerfile: Dockerfile
+    image: fire-relief-search-proxy
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    env_file: .env
+
+  backend:
+    build: ./backend
+    env_file: .env
+    depends_on:
+      - mcp
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - mcp
+
+  n8n:
+    image: n8nio/n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./n8n:/home/node/.n8n
+    depends_on:
+      - mcp
+
